@@ -11,6 +11,9 @@
 		F2C158552B1B4FAE00D5473B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C158542B1B4FAE00D5473B /* ContentView.swift */; };
 		F2C158572B1B4FAF00D5473B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C158562B1B4FAF00D5473B /* Assets.xcassets */; };
 		F2C1585A2B1B4FAF00D5473B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C158592B1B4FAF00D5473B /* Preview Assets.xcassets */; };
+		F2C158612B1B4FBC00D5473B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C158602B1B4FBC00D5473B /* ListView.swift */; };
+		F2C158632B1B4FC600D5473B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C158622B1B4FC600D5473B /* ListViewModel.swift */; };
+		F2C158652B1B542A00D5473B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C158642B1B542A00D5473B /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F2C158542B1B4FAE00D5473B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F2C158562B1B4FAF00D5473B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2C158592B1B4FAF00D5473B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2C158602B1B4FBC00D5473B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		F2C158622B1B4FC600D5473B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		F2C158642B1B542A00D5473B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				F2C158522B1B4FAE00D5473B /* ParallelListViewApp.swift */,
 				F2C158542B1B4FAE00D5473B /* ContentView.swift */,
+				F2C158602B1B4FBC00D5473B /* ListView.swift */,
+				F2C158622B1B4FC600D5473B /* ListViewModel.swift */,
+				F2C158642B1B542A00D5473B /* DataStore.swift */,
 				F2C158562B1B4FAF00D5473B /* Assets.xcassets */,
 				F2C158582B1B4FAF00D5473B /* Preview Content */,
 			);
@@ -139,6 +148,9 @@
 			files = (
 				F2C158552B1B4FAE00D5473B /* ContentView.swift in Sources */,
 				F2C158532B1B4FAE00D5473B /* ParallelListViewApp.swift in Sources */,
+				F2C158632B1B4FC600D5473B /* ListViewModel.swift in Sources */,
+				F2C158652B1B542A00D5473B /* DataStore.swift in Sources */,
+				F2C158612B1B4FBC00D5473B /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

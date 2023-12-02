@@ -8,12 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var selectedTab = 0
+    
+    @State var listViewModels: [ListViewModel] = [
+        ListViewModel(),
+        ListViewModel(),
+        ListViewModel()
+    ]
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
+            TabView(selection: $selectedTab) {
+                ForEach(Array(listViewModels.enumerated()), id: \.element) { index, viewModel in
+                    
+                    ListView(viewModel: viewModel)
+                        .tag(index)
+                }
+            }
+            .tabViewStyle(.page)
+            
+            HStack {
+                Button("add new task") {
+                    debugPrint("current: \(selectedTab)")
+                    
+                    listViewModels[selectedTab].addItem(title: "new task")
+                    
+                }
+                Spacer()
+            }.padding()
+            
         }
         .padding()
     }
@@ -21,4 +46,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(DataStore())
 }
