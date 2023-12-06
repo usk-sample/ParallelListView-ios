@@ -16,7 +16,7 @@ class DataStore: ObservableObject {
             return items
         } else {
             
-            var items: [Item] = [
+            let items: [Item] = [
                 .item(title: "task 1"),
                 .item(title: "task 2"),
                 .item(title: "task 3")

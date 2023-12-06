@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListView: View {
     
-    @StateObject var viewModel = ListViewModel()
+    @StateObject var viewModel: ListViewModel
     @EnvironmentObject var dataStore: DataStore
     
     var body: some View {
@@ -17,13 +17,14 @@ struct ListView: View {
             ForEach($viewModel.items) { item in
                 Text(item.title.wrappedValue)
             }
-        }.onAppear {
+        }
+        .onAppear {
             self.viewModel.loadItems(store: dataStore)
         }
     }
 }
 
 #Preview {
-    ListView()
+    ListView(viewModel: .init())
         .environmentObject(DataStore())
 }
